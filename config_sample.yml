@@ -1,0 +1,4 @@
+dev:
+  storage: local
+  storage_path: /tmp/registry
+  loglevel: debug
