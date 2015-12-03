@@ -3,7 +3,10 @@
 from setuptools import setup
 from setuptools import find_packages
 
-requires = []
+requires = [
+    "Flask==0.10.1",
+    "PyYAML==3.11"
+]
 
 setup(
     name='peer_registry',
