@@ -36,3 +36,8 @@ def put_application_checksum(application_id):
 @app.route('/v1/applications/<application_id>/checksum', methods=['GET'])
 def get_application_checksum(application_id):
     return response(store.get_content(store.application_checksum_path(application_id)), raw=True)
+
+
+@app.route('/v1/applications/<application_id>/ancestry', methods=['GET'])
+def get_application_ancestry(application_id):
+    return response(store.get_content(store.application_ancestry_path(application_id)), raw=True)
